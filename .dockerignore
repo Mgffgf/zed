@@ -1,0 +1,11 @@
+.env
+*.log
+.git/
+.idea/
+str.py
+Procfile
+downloads/
+raw_files/
+.gitignore
+runtime.txt
+__pycache__/

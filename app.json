@@ -1,0 +1,90 @@
+{
+  "name": "ZedMusic",
+  "logo": "https://telegra.ph/file/5adc05c0958432a117183.jpg",
+  "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by ZEDThon.",
+  "keywords": ["music", "voicechat", "telegram"],
+  "repository": "https://github.com/zedthon/ZedMusic",
+  "stack": "container",
+  "buildpacks": [
+   {
+     "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+   },
+   {
+     "url": "heroku/python"
+   }   
+  ],        
+  "env": {
+    "SESSION_NAME": {
+      "description": "كــود تـيرمكــس",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "تـوكـن بــوتك",
+      "required": true
+    },
+    "BOT_USERNAME": {
+      "description": "معــرف بــوتك",
+      "required": true
+    },
+    "BOT_DEVV": {
+      "description": "معــرف حســابك مطــور البــوت بــدون @ ..",
+      "required": true
+    },
+    "BOT_NAME": {
+      "description": "اســم بــوتــك",
+      "required": false,
+      "value": ""
+    },
+    "SUPPORT_GROUP": {
+      "description": "Your MusicPlayer support group without @ [Leave this if you don't have one]",
+      "required": false,
+      "value": "Music_Zll"
+    },
+    "PROJECT_NAME": {
+      "description": "Your MusicPlayer project Name.",
+      "required": false,
+      "value": "ZedMusic v5"
+    },
+    "ASSISTANT_NAME": {
+      "description": "مـعـرف الحـسـاب المسـاعـد بــدون @ ..",
+      "required": true
+    },
+    "ARQ_API_KEY": {
+      "description": "جيب الكــود من هذا البوت @ARQRobot",
+      "required": false,
+      "value": ""
+    },    
+    "BG_IMAGE": {
+      "description": "اتــركــهــا كمــا هــي",
+      "required": false,
+      "value": " https://telegra.ph/file/5adc05c0958432a117183.jpg"
+    },     
+    "UPDATES_CHANNEL": {
+      "description": "Updates Channel without @ [Leave this if you don't have one].",
+      "required": false,
+      "value": "Music_Zlll"
+    },    
+    "API_ID": {
+      "description": "ايبـي ايــدي",
+      "required": true
+    },
+    "PMPERMIT": {
+      "description": "Change to turn off",
+      "required": false,
+      "value": "ENABLE"
+    },    
+    "API_HASH": {
+      "description": "ايبـي هــاش",
+      "required": true
+    },
+    "SUDO_USERS": {
+      "description": "لــ اضافــة مطــوريـن لــ بوتـك (ادخـل ايديات المطورين وخلي مسافه بين كل ايدي والثاني).",
+      "required": true
+    },
+    "DURATION_LIMIT": {
+      "description": "اتــركــهــا كمــا هــي",
+      "required": true,
+      "value": "10"
+    }
+  }
+}
